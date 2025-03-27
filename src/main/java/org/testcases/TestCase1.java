@@ -18,11 +18,11 @@ public class TestCase1 {
     public void closingBrowser(){
         System.out.println("Closing browser.");
     }
-    @Test(priority=2)
+    @Test(priority=2, groups="functional")
     public void doLogin(){
         System.out.println("Executing login test.");
     }
-    @Test(priority=1)
+    @Test(priority=1, groups="functional")
     public void doUserRegistration(){
         System.out.println("Executing user registration.");
     }
